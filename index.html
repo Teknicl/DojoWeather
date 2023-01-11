@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="top-container">
+            <div class="top">
+                <div class="title">
+                    <h1>DojoWeather</h1> 
+                </div>
+                <div class="navlinks">
+                    <a href="#" class="st-link" onclick="weatherReport(this)">Burbank</a>
+                    <a href="#" class="st-link" onclick="weatherReport(this)">Chicago</a>
+                    <a href="#" class="st-link" onclick="weatherReport(this)">Dallas</a>
+                </div>
+            </div>
+        </div>
+        <div class="loc-container"> 
+            <!-- Location -->
+            <div class="loc-flexbox">
+                <div class="location">
+                    <h1> San Jose</h1>
+                </div>
+                <div class="temp-select">
+                    <p>show temperature in &nbsp;</p>
+                    <select name="measurement" id="temp-measurement" class="selector" onchange="measurementSelect(this)">
+                        <option value="Celsius">°C</option>
+                        <option value="Fahrenheit">°F</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="forecast-container">
+            <div class="forecast-flex">
+                <div class="day">
+                    <h2>Today</h2>
+                    <br>
+                    <img src="assets/some_rain.png" alt="some_rain">
+                    <br>
+                    <h3>some rain</h3>
+                    <br>
+                    <p><span class="red-text" id="one">24°</span>&emsp;&emsp;&emsp;&emsp;<span class="blue-text" id="two">18°</span></p>
+                </div>
+                <div class="day">
+                    <h2>Tomorrow</h2>
+                    <br>
+                    <img src="assets/some_sun.png" alt="some_sun">
+                    <br>
+                    <h3>some sun</h3>
+                    <br>
+                    <p><span class="red-text" id="three">27°</span>&emsp;&emsp;&emsp;&emsp;<span class="blue-text" id="four">19°</span></p>
+                </div>
+                <div class="day">
+                    <h2>Friday</h2>
+                    <br>
+                    <img src="assets/some_clouds.png" alt="some_clouds">
+                    <br>
+                    <h3>some clouds</h3>
+                    <br>
+                    <p><span class="red-text" id="five">21°</span>&emsp;&emsp;&emsp;&emsp;<span class="blue-text" id="six">16°</span></p>
+                </div>
+                <div class="day">
+                    <h2>Saturday</h2>
+                    <br>
+                    <img src="assets/some_sun.png" alt="some_sun">
+                    <br>
+                    <h3>some sun</h3>
+                    <br>
+                    <p><span class="red-text" id="seven">26°</span>&emsp;&emsp;&emsp;&emsp;<span class="blue-text" id="eight">21°</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="warning-container">
+            <div class="warning-flex">
+                <div class="warn-left">
+                    <img src="assets/cookie.png" alt="cookie">
+                </div>
+                <div class="warn-mid">
+                    <p class="warn-title">Stop! Cookie Time</p>
+                    <p class="warn-text">We use cookies (sadly not the editable ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <div class="warn-right">
+                    <button class="accept" onclick="cookieAccept(this)">I Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+<script src="script.js"></script>
+</body>
+</html>

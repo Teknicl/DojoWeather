@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* Navbar */
+.top-container {
+    height: 80px;
+    width: 100%;
+    background-color: #9FC5F8;
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    height: 80px;
+    width: 1000px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 50%;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.navlinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.st-link {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Location */
+.loc-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loc-flexbox {
+    width: 1000px;
+    display: flex;
+    justify-items: space-evenly;
+    border-bottom: 2px solid black;
+    padding: 15px 0px;
+    margin-bottom: 20px;
+}
+
+.location {
+    width: 50%;
+    display: flex;
+}
+
+.temp-select {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.selector {
+    font-size: large;
+}
+
+/* Forecast */
+.forecast-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast-flex {
+    width: 1025px;
+    display: flex;
+    justify-content: center;
+}
+
+.day {
+    width: 24%;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 10px;
+    padding: 20px 0px;
+}
+
+.day img {
+    width: 175px;
+    border-radius: 100px;
+}
+
+.red-text {
+    color: #CF2A27;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.blue-text {
+    color: #2B78E4;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/* Warning */
+.warning-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.warning-flex {
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.warn-title {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.warn-text {
+    font-size: large;
+    font-weight: bold;
+}
+
+.warn-left {
+    width: 15%;
+}
+
+.warn-right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accept {
+    width: 100px;
+    height: 30px;
+    background-color: #9FC5F8;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 3px 3px;
+}
